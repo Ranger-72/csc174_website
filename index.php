@@ -13,7 +13,7 @@ while($row = $query->fetch_assoc()){
     echo "<tr>
     <td>{$row['warehouseID']}</td>
     <td>{$row['location']}</td>
-    </tr";
+    </tr>";
 }
 ?>
 </table>
