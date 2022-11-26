@@ -6,7 +6,7 @@ $query = $conn->query("Select * from warehouse");
 <table border="1">
 <tr>
     <td>WID</td>
-    <tc>Location</td>
+    <td>Location</td>
 </tr>
 <?php
 while($row = $query->fetch_assoc()){
