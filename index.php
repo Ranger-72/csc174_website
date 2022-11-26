@@ -1,4 +1,5 @@
 <?php
+ include_once("index.html");
  $dbHost = "ec2-34-235-198-25.compute-1.amazonaws.com";
  $dbPort = "5432"
  $dbName = "d438kslsstlh9v";
