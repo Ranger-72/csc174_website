@@ -1,5 +1,5 @@
 <?php
-$conn = $conn = pg_connect("host=ec2-34-235-198-25.compute-1.amazonaws.com  
+$conn = pg_connect("host=ec2-34-235-198-25.compute-1.amazonaws.com  
                             port=5432 
                             dbname=d438kslsstlh9v 
                             user=ikovqwtdqjkzap
