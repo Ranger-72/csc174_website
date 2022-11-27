@@ -1,7 +1,7 @@
 <?php
 include_once("config.php");
 
-$loaction = mysqli_real_escape_string($conn, $_POST['location']);
+$location = mysqli_real_escape_string($conn, $_POST['location']);
 
 $sql = "INSERT INTO warehouse (warehouseID, location) VALUES (314,?);"
 $stmt = mysqli_stmt_init($conn);
@@ -10,7 +10,7 @@ if (!mysqli_stmt_prepare($stmt,$sql)){
     echo "Prepared Statement Failed";
 }
 else{
-    mysqli_stmt_bind_param($stmt,"s", $data);
+    mysqli_stmt_bind_param($stmt,"s", $location);
     mysqli_stmt_exexcute($stmt);
     $result = mysqli_stmt_get_result($stmt);
 }
