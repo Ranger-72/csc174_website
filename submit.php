@@ -4,7 +4,7 @@ include_once("config.php");
 $location = mysqli_real_escape_string($conn, $_POST['location']);
 $wID = '754';
 
-$sql = "INSERT INTO warehouse (warehouseID, location) VALUES (?,?);"
+$sql = "INSERT INTO warehouse (warehouseID, location) VALUES (?,?);";
 $stmt = mysqli_stmt_init($conn);
 
 if (!mysqli_stmt_prepare($stmt,$sql)){
