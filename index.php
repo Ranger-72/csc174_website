@@ -1,5 +1,5 @@
 <?php
-include_once("config.php");
+include("config.php");
 $query = $conn->query("Select * from warehouse");
 ?>
 
