@@ -3,7 +3,7 @@ include_once("config.php");
 
 $loaction = mysqli_real_escape_string($conn, $_POST['location']);
 
-$sql = "INSERT INTO warehouse (warehouseID, location) VALUES (warehouseID,?);"
+$sql = "INSERT INTO warehouse (warehouseID, location) VALUES (314,?);"
 $stmt = mysqli_stmt_init($conn);
 
 if (!mysqli_stmt_prepare($stmt,$sql)){
