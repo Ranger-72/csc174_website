@@ -2,12 +2,12 @@
 include_once("config.php");
 ?>
 
-<form action = "submit.php" method = "POST">
+<!-- <form action = "submit.php" method = "POST">
     <input type = 'text' name = "location" placeholder = "Location">
     <br><br>
     <button type = "submit" name = "submit">Submit</button>
     <br>
-</form>
+</form> -->
 
 <table border="1">
 <tr>
