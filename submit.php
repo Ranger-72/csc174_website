@@ -13,6 +13,12 @@ if (!mysqli_stmt_prepare($stmt,$sql)){
 else{
     mysqli_stmt_bind_param($stmt,"ss", $wID, $location);
     mysqli_stmt_execute($stmt);
-    echo "Success";
 }
 ?>
+
+<table border="1" >
+<tr>
+    <td>WID</td>
+    <td>Location</td>
+</tr>
+</table>
