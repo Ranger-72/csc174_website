@@ -1,5 +1,6 @@
 <?php
 include_once("config.php");
+$query = $conn->query("Select * from warehouse");
 ?>
 
 <!-- <form action = "submit.php" method = "POST">
@@ -16,7 +17,6 @@ include_once("config.php");
 </tr>
 
 <?php
-$query = $conn->query("Select * from warehouse");
 while($row = $query->fetch_assoc()){
     echo "<tr>
     <td>{$row['warehouseID']}</td>
