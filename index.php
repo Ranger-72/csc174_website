@@ -1,19 +1,6 @@
-<?php
-include("config.php");
-$query = $conn->query("SELECT * FROM warehouse");
-?>
-
-<table border="1">
-<tr>
-    <td>WID</td>
-    <td>Location</td>
-</tr>
-<?php
-while($row = $query->fetch_assoc()){
-    echo "<tr>
-    <td>{$row['warehouseID']}</td>
-    <td>{$row['location']}</td>
-    </tr>";
-}
-?>
-</table>
+<form action = "submit.php" method = "POST">
+    <input type = 'text' name = "location" placeholder = "Location">
+    <br>
+    <button type = "submit" name = "submit">Submit</button>
+    <br>
+</form>
