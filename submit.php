@@ -1,3 +1,10 @@
+<table border="1" >
+<tr>
+    <td>WID</td>
+    <td>Location</td>
+</tr>
+</table>
+
 <?php
 include_once("config.php");
 
@@ -13,12 +20,14 @@ if (!mysqli_stmt_prepare($stmt,$sql)){
 else{
     mysqli_stmt_bind_param($stmt,"ss", $wID, $location);
     mysqli_stmt_execute($stmt);
+    $result = mysqli_stmt_get_result($stmt);
+
+    while($row = mysqli_fetch_assoc($result)){
+    echo "<tr>
+    <td>{$row['warehouseID']}</td>
+    <td>{$row['location']}</td>
+    </tr>";
+}
 }
 ?>
 
-<table border="1" >
-<tr>
-    <td>WID</td>
-    <td>Location</td>
-</tr>
-</table>
