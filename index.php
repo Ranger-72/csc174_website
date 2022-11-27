@@ -1,6 +1,6 @@
 <?php
 include("config.php");
-$query = $conn->query("Select * from warehouse");
+$query = $conn->query("SELECT * FROM warehouse");
 ?>
 
 <table border="1">
