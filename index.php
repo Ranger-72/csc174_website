@@ -5,7 +5,7 @@
     <br>
 </form>
 
-
+<h1>Current Data in Warehouse Table</h1>
 <table border="1" >
         <tr>
             <td>WID</td>
