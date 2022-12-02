@@ -1,5 +1,5 @@
 <form action = "insert_display.php" target = "_blank" method = "POST">
-    <input type = 'text' name = "WID" placeholder = "Please enter a 3 digit Number">
+    <input type = 'text' name = "WID" placeholder = "Enter a 3-digit Number">
     <br>
     <button type = "submit" name = "submit">Submit</button>
     <br>
