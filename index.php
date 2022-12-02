@@ -1,4 +1,4 @@
-<form action = "submit.php" target = "_blank" method = "POST">
+<form action = "insert_display.php" target = "_blank" method = "POST">
     <input type = 'text' name = "location" placeholder = "Please enter a location">
     <br>
     <button type = "submit" name = "submit">Submit</button>
@@ -12,15 +12,8 @@
             <td>Location</td>
         </tr>
         <?php
-        include_once("config.php");
-        $query = $conn->query("Select * from warehouse");
-        while($row = $query->fetch_assoc()){
-            echo "<tr>
-            <td>{$row['warehouseID']}</td>
-            <td>{$row['location']}</td>
-            </tr>";
-        }
-        mysqli_close($conn);
+        include_once("connection.php");
+        include_once("select.php");
         ?>
 </table>
 
