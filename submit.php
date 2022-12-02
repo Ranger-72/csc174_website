@@ -2,7 +2,7 @@
 include_once("config.php");
 
 $location = mysqli_real_escape_string($conn, $_POST['location']);
-$wID = '999';
+$wID = '754';
 
 $sql = "INSERT INTO warehouse (warehouseID, location) VALUES (?,?);";
 $stmt = mysqli_stmt_init($conn);
@@ -17,17 +17,19 @@ else{
 ?>
 
 <table border="1" >
-<tr>
-    <td>WID</td>
-    <td>Location</td>
-</tr>
-<?php
-$query = $conn->query("Select * from warehouse");
-while($row = $query->fetch_assoc()){
-    echo "<tr>
-    <td>{$row['warehouseID']}</td>
-    <td>{$row['location']}</td>
-    </tr>";
-}
-?>
+        <tr>
+            <td>WID</td>
+            <td>Location</td>
+        </tr>
+        <?php
+        $query = $conn->query("Select * from warehouse");
+        while($row = $query->fetch_assoc()){
+            echo "<tr>
+            <td>{$row['warehouseID']}</td>
+            <td>{$row['location']}</td>
+            </tr>";
+        }
+        mysqli_close($conn);
+        ?>
 </table>
+
