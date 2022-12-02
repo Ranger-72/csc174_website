@@ -12,6 +12,7 @@
             <td>Location</td>
         </tr>
         <?php
+        include_once("connection.php");
         include_once("select.php");
         ?>
 </table>

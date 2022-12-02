@@ -20,8 +20,6 @@
             mysqli_stmt_bind_param($stmt,"ss", $wID, $location);
             mysqli_stmt_execute($stmt);
         }
-        mysqli_close($conn);
-        
         include_once(select.php);
         ?>
 </table>

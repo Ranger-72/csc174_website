@@ -1,5 +1,4 @@
 <?php
-        include_once("connection.php");
         $query = $conn->query("Select * from warehouse");
         while($row = $query->fetch_assoc()){
             echo "<tr>
