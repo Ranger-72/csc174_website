@@ -2,7 +2,7 @@
 include_once("connection.php");
 
 $location = mysqli_real_escape_string($conn, $_POST['location']);
-$wID = '111';
+$wID = '222';
 
 $sql = "INSERT INTO warehouse (warehouseID, location) VALUES (?,?);";
 $stmt = mysqli_stmt_init($conn);
@@ -14,6 +14,7 @@ else{
     mysqli_stmt_bind_param($stmt,"ss", $wID, $location);
     mysqli_stmt_execute($stmt);
 }
+mysqli_close($conn);
 ?>
 
 <h1>Updated Data in Warehouse Table</h1>
@@ -24,7 +25,6 @@ else{
         </tr>
         <?php
         include_once(select.php);
-        mysqli_close($conn);
         ?>
 </table>
 
