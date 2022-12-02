@@ -2,7 +2,7 @@
 include_once("config.php");
 
 $location = mysqli_real_escape_string($conn, $_POST['location']);
-$wID = '754';
+$wID = '111';
 
 $sql = "INSERT INTO warehouse (warehouseID, location) VALUES (?,?);";
 $stmt = mysqli_stmt_init($conn);
@@ -16,6 +16,7 @@ else{
 }
 ?>
 
+<h1>Updated Data in Warehouse Table</h1>
 <table border="1" >
         <tr>
             <td>WID</td>

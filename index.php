@@ -1,5 +1,5 @@
 <form action = "submit.php" target = "_blank" method = "POST">
-    <input type = 'text' name = "location" placeholder = "location">
+    <input type = 'text' name = "location" placeholder = "Please enter a location">
     <br>
     <button type = "submit" name = "submit">Submit</button>
     <br>
