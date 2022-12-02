@@ -8,7 +8,7 @@
         include_once("connection.php");
 
         $location = mysqli_real_escape_string($conn, $_POST['location']);
-        $wID = '333';
+        $wID = '555';
         
         $sql = "INSERT INTO warehouse (warehouseID, location) VALUES (?,?);";
         $stmt = mysqli_stmt_init($conn);
