@@ -11,6 +11,7 @@ Full Path to files that Handle SQL Inserts and Selects.
                        and a "Select" query to display updated data (same process as seen in index.php))
 
 File Notes:
+
 index.php: - Handles the main frontend (Textbox, button, and table)
 
 insert_display.php: - Handles backend for "Insert" with prepared statement.
