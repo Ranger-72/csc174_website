@@ -12,9 +12,13 @@ Full Path to files that Handle SQL Inserts and Selects.
 
 File Notes:
 
-index.php: - Handles the main frontend (Textbox, button, and table)
+index.php: 
+ - Handles the main frontend (Textbox, button, and table)
 
-insert_display.php: - Handles backend for "Insert" with prepared statement.
-                    - Contains frontend code to create a table in to display updated table data.
+insert_display.php:
+ - Handles backend for "Insert" with prepared statement.
+                   
+ - Contains frontend code to create a table in to display updated table data.
 
-connection.php: - Backend code to establish connection to database.
+connection.php: 
+ - Backend code to establish connection to database.
